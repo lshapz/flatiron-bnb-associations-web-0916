@@ -5,8 +5,7 @@ describe Listing do
   let(:financial_district) { Neighborhood.create(name: 'Fi Di', city: new_york_city) }
   let(:amanda) { User.create(name: "Amanda") }
   let(:logan) { User.create(name: "Logan") }
-  let!(:listing) do
-    Listing.create(
+  let!(:listing) do   Listing.create( 
       address: '123 Main Street',
       listing_type: "private room",
       title: "Beautiful Apartment on Main Street",
